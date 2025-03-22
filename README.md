@@ -1,3 +1,4 @@
 ## React-Template-Code-Sandbox-Explore
 
-This is a basic React template project created using **CodeSandbox**.
+This is a React testing template and exploring project created using **CodeSandbox**.
+https://codesandbox.io/
