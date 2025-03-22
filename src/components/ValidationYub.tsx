@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
 import "../CSS/AddUserForm.css";
+//-------------------------------------------------------------
 
 // Define the validation schema with Yup
 const validationSchema = Yup.object({
@@ -12,6 +13,7 @@ const validationSchema = Yup.object({
     .required("Email is required."),
   role: Yup.string().required("Role is required."),
 });
+//-------------------------------------------------------------
 
 const AddUserForm: React.FC = () => {
   const {
@@ -21,11 +23,12 @@ const AddUserForm: React.FC = () => {
   } = useForm({
     resolver: yupResolver(validationSchema),
   });
-
+//-------------------------------------------------------------
   const onSubmit = (data: any) => {
     console.log(data); // Log the form data when submitted
   };
-
+//-------------------------------------------------------------
+  
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="form-group">
