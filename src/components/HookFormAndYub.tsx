@@ -1,3 +1,7 @@
+//Best Practice React Hook Form + Yup
+//React Hook Form gives better performance and cleaner code than useState
+//Yup gives scalable, centralized validation logic.
+
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -15,7 +19,7 @@ const validationSchema = Yup.object({
 });
 //-------------------------------------------------------------
 
-const AddUserForm: React.FC = () => {
+const HookFormAndYub: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -70,4 +74,4 @@ const AddUserForm: React.FC = () => {
   );
 };
 
-export default AddUserForm;
+export default HookFormAndYub;
