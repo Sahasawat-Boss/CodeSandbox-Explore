@@ -1,3 +1,4 @@
+//Cleaner that HookFormAndYub01
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -18,7 +19,7 @@ const validationSchema = Yup.object({
   role: Yup.string().required("Role is required"),
 });
 
-const HookFormAndYub: React.FC = () => {
+const HookFormAndYub02: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -71,4 +72,4 @@ const HookFormAndYub: React.FC = () => {
   );
 };
 
-export default HookFormAndYub;
+export default HookFormAndYub02;
