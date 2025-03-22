@@ -19,7 +19,7 @@ const validationSchema = Yup.object({
 });
 //-------------------------------------------------------------
 
-const HookFormAndYub: React.FC = () => {
+const HookFormAndYub01: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -74,4 +74,4 @@ const HookFormAndYub: React.FC = () => {
   );
 };
 
-export default HookFormAndYub;
+export default HookFormAndYub01;
