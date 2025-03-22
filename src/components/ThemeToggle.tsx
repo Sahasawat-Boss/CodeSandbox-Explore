@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../CSS/Main.css";
 
+//------------------------------------------------------------------
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     const savedTheme = localStorage.getItem("theme");
     return savedTheme === "dark";
   });
+//------------------------------------------------------------------
 
   useEffect(() => {
     if (darkMode) {
@@ -16,7 +18,7 @@ const App: React.FC = () => {
       document.body.classList.remove("dark");
     }
   }, [darkMode]);
-
+//------------------------------------------------------------------
   return (
     <div>
       <button
