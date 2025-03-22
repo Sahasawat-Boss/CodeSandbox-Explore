@@ -1,4 +1,7 @@
 //Cleaner that HookFormAndYub01
+//Safer with TypeScript(Typed with FormData)
+//More scalable
+//Clean and professional 
 import React from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
