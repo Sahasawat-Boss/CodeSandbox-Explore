@@ -1,0 +1,71 @@
+.App {
+  padding: 4px;
+}
+
+/* Default light theme */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 2rem; /* Emoji size */
+  font-weight: bolder;
+  padding-bottom: 20px;
+}
+/* Responsive styling for mobile devices */
+@media screen and (max-width: 560px) {
+  .Title {
+    flex-direction: column;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+    gap: 5px;
+  }
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+body.dark table {
+  background-color: #444;
+  color: white;
+}
+
+body.dark th {
+  background-color: #555;
+}
+
+body.dark tr:hover {
+  background-color: #666;
+}
+
+body.dark td,
+body.dark th {
+  border: 1px solid #666;
+}
+
+/* Button Style */
+.theme-toggle-btn {
+  background-color: #2f2f2f;
+  color: #171717;
+  font-size: 1rem; /* Emoji size */
+  padding: 0px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.theme-toggle-btn:hover {
+  background-color: #ddd;
+  transform: scale(1.1);
+}

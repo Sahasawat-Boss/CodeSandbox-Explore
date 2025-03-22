@@ -1,0 +1,93 @@
+/* AddUserForm.css */
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select {
+  padding: 6px;
+  margin: 4px 0;
+  border: 1px solid #bdbdbd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+select {
+  font-size: 1rem;
+  background-color: #f8f9fa;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+}
+
+.formError {
+  color: red;
+  text-align: center;
+}
+
+button {
+  padding: 8px;
+  margin-top: 8px;
+  background-color: #0578f4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgb(132, 190, 252);
+  scale: 105%;
+  transition: ease-in-out;
+  transition-duration: 300ms;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 570) {
+  /* Adjust form width for smaller screens */
+  form {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  /* Adjust input and select field padding and font-size for mobile */
+  input,
+  select {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+
+  /* Adjust button size and padding for mobile */
+  button {
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+
+  /* Adjust margins and space between elements */
+  .formError {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+}
