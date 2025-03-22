@@ -18,7 +18,7 @@ const validationSchema = Yup.object({
   role: Yup.string().required("Role is required"),
 });
 
-const HookFormAndYub01: React.FC = () => {
+const HookFormAndYub: React.FC = () => {
   const {
     register,
     handleSubmit,
@@ -71,4 +71,4 @@ const HookFormAndYub01: React.FC = () => {
   );
 };
 
-export default HookFormAndYub01;
+export default HookFormAndYub;
