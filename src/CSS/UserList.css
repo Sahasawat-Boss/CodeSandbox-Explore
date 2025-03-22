@@ -1,4 +1,6 @@
 /* Basic table styling */
+
+/* For Main Eelement >> Can remove and User TailwindCSS */
 .main {
   max-width: 550px;
   margin: auto;
