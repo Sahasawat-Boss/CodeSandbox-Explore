@@ -1,7 +1,8 @@
+//Manual Inline Validation
 import React, { useState } from "react";
 import "../CSS/AddUserForm.css";
 
-const AddUserForm: React.FC = () => {
+const ManualValidation: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [role, setRole] = useState("Admin");
@@ -68,4 +69,4 @@ const AddUserForm: React.FC = () => {
   );
 };
 
-export default AddUserForm;
+export default ManualValidation;
